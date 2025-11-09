@@ -1,0 +1,49 @@
+{
+  "start_time": "2025-11-08T21:26:06.019596",
+  "end_time": "2025-11-09T06:07:26.551901",
+  "duration_seconds": 31280.532305,
+  "duration_hours": 8.689036751388889,
+  "ablation_type": "size",
+  "baseline_val_loss": 1.93,
+  "base_config": {
+    "data_path": "data/iwslt2017",
+    "src_lang": "en",
+    "tgt_lang": "de",
+    "d_model": 256,
+    "n_heads": 8,
+    "d_ff": 1024,
+    "n_layers": 3,
+    "dropout": 0.1,
+    "max_seq_len": 128,
+    "batch_size": 32,
+    "epochs": 15,
+    "lr": 0.0003,
+    "warmup_steps": 4000,
+    "save_every": 5
+  },
+  "results": {
+    "size": [
+      {
+        "model_size": "baseline",
+        "d_model": 256,
+        "d_ff": 1024,
+        "n_heads": 8,
+        "success": false
+      },
+      {
+        "model_size": "medium",
+        "d_model": 512,
+        "d_ff": 2048,
+        "n_heads": 8,
+        "success": false
+      },
+      {
+        "model_size": "large",
+        "d_model": 768,
+        "d_ff": 3072,
+        "n_heads": 12,
+        "success": false
+      }
+    ]
+  }
+}

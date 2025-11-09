@@ -1,0 +1,10 @@
+{
+  "train_size": 5000,
+  "val_size": 500,
+  "test_size": 500,
+  "src_lang": "en",
+  "tgt_lang": "de",
+  "seed": 42,
+  "created_from": "iwslt2017",
+  "purpose": "Quick ablation testing"
+}
